@@ -7,5 +7,5 @@ RemindMail (placeholder name; “the software”) is defined as an email-based r
 The software is split into further components, with the primary two being the setup of the web service interface, and the ability to send emails. Further features have to do with the internal functionality, or alternative access.
 
 ### Participants
-- Liji Philip
+- Liji Philip ([@Lijiphil](https://github.com/Lijiphil))
 - Trystyn Cote ([@trystyncote](https://github.com/trystyncote))
