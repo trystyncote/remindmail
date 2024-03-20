@@ -1,21 +1,26 @@
 const nodemailer = require("nodemailer");
 
 
-const SENDER_ADDRESS = "remindmail.example@gmail.com";
-const SENDER_PASSWORD = "SuperSecurePassword246";
+const SENDER = {
+    address: "monique.stokes@ethereal.email",
+    password: "2gUsj4GJuKmjSXbfc8"
+};
 
 const TRANSPORTER = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.ethereal.email",  // Ethereal is a substitute email service
+    // designed to be used with `nodemailer`. It is used here as a substitute
+    // for a real email service while the functionality is being set-up.
+    port: 587,
     auth: {
-        user: SENDER_ADDRESS,
-        pass: SENDER_PASSWORD
+        user: SENDER.address,
+        pass: SENDER.password
     }
 });
 
 
 function send_email (recipient, body) {
     const message = {
-        from: SENDER_ADDRESS,
+        from: SENDER.address,
         to: recipient,
         subject: "SUBJECT",
         text: body
