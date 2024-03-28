@@ -26,13 +26,8 @@ function send_email (recipient, body) {
         text: body
     };
 
-    TRANSPORTER.sendMail(message, (error, info) => {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log(`email sent: ${info.response}`);
-        }
-    });
+    TRANSPORTER.sendMail(message);
+    return 1;  // `1` meaning "good".
 };
 
 
