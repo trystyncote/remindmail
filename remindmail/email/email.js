@@ -31,6 +31,15 @@ function send_email (recipient, body) {
 };
 
 
+function send_email_simulate (recipient, body)
+{
+    console.log(recipient);
+    console.log(body);
+    return 1;
+};
+
+
 module.exports = {
-    "send_email": send_email
+    "send_email": send_email,
+    "send_email_simulate": send_email_simulate
 };
