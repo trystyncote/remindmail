@@ -1,5 +1,7 @@
 Disclaimer: This is a project for a college-level software development class, and is therefore not an actual software. This is primarily to demonstrate understanding, and for practice.
 
+At this point, the duration of the project has run its course, and as a result this repository is to be archived to preserve the end-result.
+
 ### Participants
 - Liji Philip ([@Lijiphil](https://github.com/Lijiphil))
 - Trystyn Cote ([@trystyncote](https://github.com/trystyncote))
